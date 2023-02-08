@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с формами</title>
+</head>
+<body>
+    <form action="CommentSender">
+        <textarea name="address" rows="5" cols="30" placeholder="Ваши комментарии"></textarea>
+    </form>
+    <form action="projectchecker">
+        <table>
+            <tr>
+                <td>Выберите категорию проекта:</td>
+                <td>
+                    <select name="kategoria">
+                        <option value="townhouse">Проекты таунхаусов и блокированных домов</option>
+                        <option value="two_family">Проекты домов на две семьи</option>
+                        <option value="uzkie">Проекты узких домов</option>
+                        <option value="banya">Проекты бань</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Выберите материал:</td>
+                <td>
+                    <select name="material">
+                        <option value="kirpich">Проекты кирпичных домов</option>
+                        <option value="gazo_peno">Прокты домов из газобетона и пенобетона</option>
+                        <option value="brus_brevno">Проекты домов из бруса и бревна</option>
+                        <option value="karkas">Проекты каркасных домов</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form action="agechecker">
+        <table border="1">
+            <tr>
+                <td>
+                    до 18
+                </td>
+                <td>
+                    <input type="radio" name="age" value="0-18">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    18-50
+                </td>
+                <td>
+                    <input type="radio" name="age" value="18-50"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Старше 50
+                </td>
+                <td>
+                    <input type="radio" name="age" value="50+"> 
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form action="ProjectsChecker">
+        <table border="1">
+            <tr>
+                <td>Проекты таунхаусов и блокированных домов</td>
+                <td><input type="checkbox" name="projects"></td>
+            </tr>
+            <tr>
+                <td>Проекты домов на две семьи</td>
+                <td><input type="checkbox" name="projects"></td>
+            </tr>
+            <tr>
+                <td>Проекты узких домов</td>
+                <td><input type="checkbox" name="projects"></td>
+            </tr>
+            <tr>
+                <td>Проекты бань</td>
+                <td><input type="checkbox" name="projects"></td>
+            </tr>
+            <tr>
+                <td>Проекты кирпичных домов</td>
+                <td><input type="checkbox" name="projects"></td>
+            </tr>
+            <tr>
+                <td>Прокты домов из газобетона и пенобетона</td>
+                <td><input type="checkbox" name="projects"></td>
+            </tr>
+            <tr>
+                <td>Проекты домов из бруса и бревна</td>
+                <td><input type="checkbox" name="projects"></td>
+            </tr>
+            <tr>
+                <td>Проекты каркасных домов</td>
+                <td><input type="checkbox" name="projects"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
