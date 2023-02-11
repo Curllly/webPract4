@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Работа с формами</title>
+    <style>
+        form span {
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <form action="CommentSender">
@@ -97,6 +102,29 @@
             <tr>
                 <td>Проекты каркасных домов</td>
                 <td><input type="checkbox" name="projects"></td>
+            </tr>
+        </table>
+
+        <input type="submit" name="projects" value="Отправить данные">
+        <input type="reset" name="projects" value="Очистить">
+    </form>
+    <form action="ContactWithYou">
+        <table border="1">
+            <tr>
+                <td>Фамилия имя отчество<span>*</span></td>
+                <td><input type="text" name="fio"></td>
+            </tr>
+            <tr>
+                <td>Телефон<span>*</span></td>
+                <td><input type="text" name="phone"></td>
+            </tr>
+            <tr>
+                <td>E-mail<span>*</span></td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>Адрес<span>*</span></td>
+                <td><input type="text" name="adress"></td>
             </tr>
         </table>
     </form>
